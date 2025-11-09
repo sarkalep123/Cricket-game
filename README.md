@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>cricket game </title>
+ <head>
+    <title>cricket game </title> 
     <link rel="stylesheet" href="cricket.css">
     
 </head>
 <body>
-    <h1>Bat Ball Stump Game</h1>
+    <!-- <h1>Bat Ball Stump Game</h1> -->
   
 
     <button class="choice-button" onclick="
