@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>cricket game </title>
+    <title>cricket Game </title>
     <link rel="stylesheet" href="cricket.css">
     
 </head>
 <body>
     <h1>Bat Ball Stump Game</h1>
   
-
-    <button class="choice-button" onclick="
+  <button class="choice-button" onclick="
     let computerChoice = generateComputerChoice();
     let resultMsg = getResult('Bat',computerChoice);
     showResult('Bat', computerChoice, resultMsg);
     ">
     <img src="image/Bat.jpg" alt="bat image" class="choice-image">
     </button>
-
     <button class="choice-button" onclick="
     computerChoice = generateComputerChoice();
     resultMsg = getResult('Ball',computerChoice);
@@ -24,27 +22,20 @@
     ">  
      <img src="image/Ball.jpg" alt="ball image" class="choice-image">
      </button>
-
-    <button class="choice-button" onclick="
+   <button class="choice-button" onclick="
     computerChoice = generateComputerChoice();
     resultMsg = getResult('Stump', computerChoice);
     showResult('Stump', computerChoice, resultMsg);
     ">
        <img src="image/Stump.jpg" alt="stump image" class="choice-image">
        </button>
-
-    
-    <h3 id="user-move"></h3>
+ <h3 id="user-move"></h3>
     <h3 id="computer-move"></h3>
     <h3 id="result"></h3>
     <h3 id="score"></h3>
-
-    <button onclick="localStorage.clear()
+<button onclick="localStorage.clear()
      resetScore();
     ">Reset</button>
-
-
-
 
 <script>
     let scoreStr = localStorage.getItem('score');
@@ -67,9 +58,7 @@
 }
     
 
-    
-
-    function generateComputerChoice (){
+function generateComputerChoice (){
         //This will generate random number between 0 and 3
 
         let randomNumber = Math.random() * 3;
